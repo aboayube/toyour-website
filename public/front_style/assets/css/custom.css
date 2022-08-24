@@ -1,0 +1,87 @@
+body {
+    direction: rtl !important;
+    overflow-x: hidden;
+}
+#hero {
+    background: #fcfcfc;
+    height: 824px !important;
+}
+#hero h1,
+#hero h2 {
+    color: #000;
+}
+.btn-header {
+    width: 120px;
+    height: 44px;
+    color: white;
+    background: #fd9c14;
+    border-radius: 5px;
+    border: 0;
+}
+.nav-link.active {
+    color: #ff9900 !important;
+}
+.navbar a,
+.navbar a:focus {
+    color: #000 !important;
+    margin-right: 20px;
+    font-size: 25px !important;
+}
+
+.service {
+    background-color: #fafafa;
+
+    padding: 34px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.button {
+    width: 179px;
+    height: 50px;
+    border-radius: 5px;
+    color: #ff7040 !important;
+    border: 2px solid #ff7040;
+    min-width: 106px;
+    height: 39px;
+    text-align: center;
+    background: white;
+}
+.btn-started {
+    width: 179px;
+    height: 50px;
+    border-radius: 15px;
+    color: #ff7040 !important;
+    border: 2px solid #ff7040;
+    min-width: 106px;
+    height: 39px;
+    text-align: center;
+    background: white;
+}
+.btn-started2 {
+    height: 50px;
+    border-radius: 10px;
+    color: #ff7040 !important;
+    border: 2px solid #ff7040;
+    min-width: 106px;
+    height: 39px;
+    text-align: center;
+    background: white;
+    left: 0;
+}
+.about {
+    background: #fcfcfc !important;
+}
+.header-scrolled {
+    background: #fafafa !important;
+}
+.section-bg {
+    background-color: #fcfcfc;
+}
+.modal-content {
+    border: 5px solid orange;
+    border-radius: 30px;
+}
+.modal-body input {
+    border: 0;
+    border-bottom: 1px solid orange;
+}

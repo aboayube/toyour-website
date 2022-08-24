@@ -1,0 +1,63 @@
+<section id="why-us" class="why-us section-bg">
+    <h3 class="text-center" style="
+      font-weight: bold;">وصفات الشيف</h3>
+    <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                <div class="accordion-list">
+                    <ul>
+                        @if(!empty($chefsOne))
+                        @foreach ($chefsOne->wasfas()->take(3)->get() as $wasfa)
+                        <li class="d-flex justify-content-between">
+                            <img src="{{asset('assets/wasfas/'.$wasfa->image)}}" width="70px" heightt="70px" style="
+                  border-radius: 50%;
+                  width: 109px;
+                  height: 87px;">
+                            <p style="
+                  margin-top: 20px;">{{$wasfa->name}}</p>
+                            <p style="
+ margin-top: 20px;">سعر:<span>{{$wasfa->price}}</span></p>
+                        </li>
+
+                        @endforeach
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url({{asset("users/".$chefsOne->image)}});' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+
+            @endif
+        </div>
+        <div class="row">
+
+            @if(!empty($chefsTwo))
+            <div class="col-lg-5 align-items-stretch order-2 order-lg-1 img" style='background-image: url({{asset("users/".$chefsTwo->image)}});' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                <div class="accordion-list">
+                    <ul>
+                        @foreach($chefsTwo->wasfas()->take(3)->get() as $wasfa)
+                        <li class="d-flex justify-content-between">
+                            <img src="{{asset('assets/wasfas/'.$wasfa->image)}}" width="70px" heightt="70px" style="
+                  border-radius: 50%;
+                  width: 109px;
+                  height: 87px;">
+                            <p style="
+                  margin-top: 20px;">{{$wasfa->name}} </p>
+                            <p style="
+ margin-top: 20px;">سعر:<span>{{$wasfa->price}}</span></p>
+                        </li>
+                        @endforeach
+                        @endif
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section><!-- End Why Us Section -->
